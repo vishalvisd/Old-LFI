@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:background="@drawable/btn_black">
+    <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_alignParentLeft="true" android:text="Add Request Pending..." android:layout_alignParentRight="true" android:paddingLeft="15sp" android:textSize="25sp" android:layout_alignParentTop="true" android:paddingBottom="20sp" android:paddingTop="20sp" android:background="@drawable/btn_red"></TextView>
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Approve" android:id="@+id/prb1" android:layout_below="@+id/prtext" android:layout_alignLeft="@+id/prtext" android:layout_marginTop="65dp" android:paddingLeft="40sp" android:paddingRight="40sp" android:background="@drawable/btn_green"></Button>
+    <Button android:text="Reject" android:id="@+id/prb2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignTop="@+id/prb1" android:layout_toRightOf="@+id/prb1" android:layout_marginLeft="14dp" android:background="@drawable/btn_red"></Button>
+    <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/prtext" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginLeft="18dp" android:layout_marginTop="17dp" android:text=".." android:background="@drawable/btn_yellow"></TextView>
+    
+</RelativeLayout>

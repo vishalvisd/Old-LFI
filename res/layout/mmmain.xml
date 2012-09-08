@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="Address :" android:id="@+id/textView2" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_below="@+id/textView1" android:textSize="14sp" android:background="@drawable/btn_black7"></TextView>
+    <TextView android:textColor="@color/blackv" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:background="@drawable/btn_black5"></TextView>
+    <Button android:layout_height="wrap_content" android:id="@+id/button1" android:layout_width="wrap_content" android:layout_below="@+id/textView2" android:layout_alignParentRight="true" android:layout_alignParentLeft="true" android:background="@drawable/btn_yelw" android:textSize="13sp" android:text="Will become GREEN in &lt; 70 Sec.  If not then there is problem in ur Friend's network. TAP/PRESS HERE TO FORCE REFRESH"></Button>
+    <Button android:text="View As Map" android:layout_height="wrap_content" android:textColor="@color/blackv" android:id="@+id/bmapdet" android:layout_width="wrap_content" android:layout_below="@+id/button1" android:layout_alignParentLeft="true" android:background="@drawable/btn_black4"></Button>
+    <Button android:text="Message" android:gravity="top|left|fill_vertical|fill_horizontal" android:layout_height="wrap_content" android:id="@+id/ahref" android:layout_width="wrap_content" android:typeface="sans" android:layout_below="@+id/button1" android:layout_toRightOf="@+id/bmapdet" android:layout_toLeftOf="@+id/ahsain" android:background="@drawable/btn_green3"></Button>
+    <Button android:text="See all in Map" android:layout_height="wrap_content" android:textColor="@color/blackv" android:id="@+id/ahsain" android:layout_width="wrap_content" android:layout_alignTop="@+id/ahref" android:layout_alignParentRight="true" android:background="@drawable/btn_black6"></Button>
+    <TextView android:text="Caliberate (Rotate 360 deg) the phone and keep away from abnormal magnetic field to get more proper direction." android:id="@+id/textView3" android:layout_height="wrap_content" android:textColor="@color/bluev" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_below="@+id/bmapdet" android:layout_alignParentLeft="true"></TextView>
+    <TextView android:layout_width="wrap_content" android:id="@+id/speciali" android:textAppearance="?android:attr/textAppearanceSmall" android:layout_height="wrap_content" android:layout_below="@+id/textView3" android:layout_alignParentRight="true" android:layout_alignParentLeft="true" android:text="100% current location when GREEN." android:ellipsize="marquee" android:fadingEdge="horizontal" android:scrollHorizontally="true" android:marqueeRepeatLimit="marquee_forever" android:lines="1" android:textColor="@color/marronv"></TextView>
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/bluearrow" android:id="@+id/imageView1" android:layout_below="@+id/speciali" android:layout_centerHorizontal="true" android:layout_marginTop="16dp"></ImageView>
+    
+</RelativeLayout>

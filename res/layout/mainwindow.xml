@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1" android:background="@drawable/btn_black" xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/tvaddpeople" android:text="Click the menu key to add people" android:typeface="monospace" android:textColor="@color/blackv"  android:ellipsize="marquee" android:fadingEdge="horizontal" android:marqueeRepeatLimit="marquee_forever" android:scrollHorizontally="true" android:background="@drawable/btn_black2"></TextView>
+    <ListView android:layout_height="279dp" android:longClickable="true" android:drawSelectorOnTop="false" android:layout_width="fill_parent" android:id="@android:id/list" android:layout_below="@+id/tvaddpeople" android:layout_alignLeft="@+id/tvaddpeople" android:layout_above="@+id/menubutton" android:background="@drawable/btn_black3"></ListView>
+    <Button android:layout_height="54dp" android:layout_width="91dp" android:id="@+id/menubutton" android:text="Menu" android:layout_alignParentBottom="true" android:layout_alignRight="@android:id/list" android:background="@drawable/btn_black4" android:textColor="@color/blackv"></Button>
+    <TextView android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:text="TextView" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_alignTop="@+id/menubutton" android:layout_toLeftOf="@+id/menubutton" android:visibility="invisible"></TextView>
+    <TextView android:clickable="true" android:id="@+id/mvindicator" android:textAppearance="?android:attr/textAppearanceMedium" android:textColor="@color/blackv" android:visibility="visible" android:gravity="center_vertical|center_horizontal" android:layout_alignTop="@+id/textView1" android:layout_alignLeft="@android:id/list" android:background="@drawable/btn_yellow_mw" android:layout_alignBottom="@+id/mwunlike" android:layout_height="wrap_content" android:height="54dp" android:text="View as Map" android:textSize="13sp" android:layout_width="105dp" android:layout_toLeftOf="@+id/mwwait"></TextView>
+    <Button android:layout_height="wrap_content" android:gravity="center_vertical|center_horizontal" android:layout_width="wrap_content" android:text="Dislike" android:id="@+id/mwunlike" android:textSize="15sp" android:layout_below="@android:id/list" android:layout_alignLeft="@+id/textView1" android:visibility="invisible"></Button>
+    <ProgressBar android:layout_width="wrap_content" style="?android:attr/progressBarStyleSmall" android:id="@+id/mwwait" android:layout_height="wrap_content" android:layout_alignBottom="@+id/mwunlike" android:layout_toLeftOf="@+id/textView1" android:visibility="visible"></ProgressBar>
+    
+</RelativeLayout>

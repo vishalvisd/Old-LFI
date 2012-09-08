@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="484dp" android:background="@drawable/btn_black">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_width="wrap_content" android:id="@+id/textView1" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:paddingBottom="20sp" android:paddingTop="20sp" android:paddingLeft="30sp" android:text="Support" android:background="@drawable/btn_black"></TextView>
+    <TextView android:layout_height="wrap_content" android:paddingLeft="10sp" android:textSize="10sp" android:text="with which Registered before" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView3" android:layout_below="@+id/textView2" android:layout_alignLeft="@+id/textView2"></TextView>
+    <EditText android:layout_height="wrap_content" android:inputType="number" android:layout_width="wrap_content" android:id="@+id/editText1" android:layout_below="@+id/textView3" android:layout_alignLeft="@+id/textView3" android:layout_alignRight="@+id/textView2" android:background="@drawable/btn_yellow"></EditText>
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView5" android:layout_below="@+id/textView4" android:layout_alignLeft="@+id/editText2" android:text="The Password you had used." android:textSize="10sp" android:paddingLeft="10sp"></TextView>
+    
+    <TextView android:layout_height="wrap_content" android:textSize="22sp" android:text="Password" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView4" android:paddingRight="30sp" android:layout_below="@+id/editText1" android:layout_alignLeft="@+id/textView8"></TextView>
+    <TextView android:layout_height="wrap_content" android:paddingLeft="10sp" android:textSize="12sp" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView8" android:textColor="@color/yellowv" android:layout_alignBottom="@+id/textView1" android:layout_alignRight="@+id/textView2" android:text="Get your old Number..." android:layout_alignLeft="@+id/textView2"></TextView>
+    <EditText android:layout_height="wrap_content" android:inputType="textPassword" android:layout_width="wrap_content" android:id="@+id/editText2" android:layout_below="@+id/textView5" android:layout_alignLeft="@+id/textView4" android:layout_alignRight="@+id/textView4" android:background="@drawable/btn_yellow">
+        <requestFocus></requestFocus>
+    </EditText>
+    <EditText android:layout_height="wrap_content" android:inputType="textPersonName" android:layout_width="wrap_content" android:id="@+id/editText3" android:layout_below="@+id/textView6" android:layout_alignLeft="@+id/textView6" android:layout_alignRight="@+id/textView6" android:background="@drawable/btn_yellow"></EditText>
+    <TextView android:layout_height="wrap_content" android:textSize="22sp" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView6" android:paddingRight="50sp" android:layout_below="@+id/editText2" android:layout_alignLeft="@+id/editText2" android:layout_marginTop="15dp" android:text="Name"></TextView>
+    <TextView android:layout_height="wrap_content" android:textSize="22sp" android:text="Phone Number" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView2" android:paddingRight="40sp" android:layout_below="@+id/textView1" android:layout_alignParentLeft="true" android:layout_marginLeft="26dp" android:layout_marginTop="39dp"></TextView>
+    <TextView android:layout_height="wrap_content" android:paddingLeft="20sp" android:text="Still Problem ? mail us : visd@in.com" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:id="@+id/textView7" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:textColor="@color/yellowv" android:paddingBottom="5sp" android:textSize="14sp" android:background="@drawable/btn_red"></TextView>
+    <Button android:layout_height="wrap_content" android:paddingBottom="10sp" android:text="Tap to Unregister The Old Account" android:paddingTop="10sp" android:paddingLeft="5sp" android:layout_width="wrap_content" android:textSize="12sp" android:paddingRight="5sp" android:layout_alignTop="@+id/editText3" android:layout_alignParentRight="true" android:layout_marginRight="31dp" android:layout_toRightOf="@+id/textView5" android:id="@+id/recbut" android:background="@drawable/btn_green"></Button>
+    <TextView android:textSize="12sp" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/textView9" android:text="If you did not gave password, leave password blank." android:layout_height="wrap_content" android:layout_above="@+id/textView6" android:layout_toRightOf="@+id/textView5"></TextView>
+    
+</RelativeLayout>
+</ScrollView>

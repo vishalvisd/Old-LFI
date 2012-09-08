@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.visd.Locepeop"
+      android:versionName="1.7.7" android:versionCode="1501">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="com.visd.Locepeop.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <permission      android:name="com.visd.Locepeop.permission.C2D_MESSAGE"  android:protectionLevel="signature" />
+ 
+    
+
+    <application android:icon="@drawable/icon" 
+    			android:label="@string/app_name" android:debuggable="false">
+    	<uses-library android:name="com.google.android.maps" />
+    			
+        <activity android:name=".main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Mainwindow" android:screenOrientation="portrait" > 
+        
+        </activity>
+        <activity android:name=".ListtryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"> 
+        
+        </activity>
+        <activity android:name=".Justts" android:theme="@android:style/Theme.Translucent.NoTitleBar"> 
+        
+        </activity>
+        <activity android:name=".Waitingr"  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" > 
+        
+        </activity>
+        <activity android:name=".Recover"  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:screenOrientation="portrait"> 
+        
+        </activity>
+        <activity android:name=".Howtouse" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"> 
+        
+        </activity>
+       
+        <activity android:name=".Arrowhandler" android:screenOrientation="portrait">
+        
+        </activity>
+        <activity android:name=".Detailmap"> 
+        
+        </activity>
+        <activity android:name=".Addpeople"  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"> 
+        
+        </activity>
+        
+        <activity android:name=".Gpsdialog" android:screenOrientation="portrait" > 
+        
+        </activity>
+        
+        <activity android:name=".Refreshreg" > 
+        
+        </activity>
+        
+        <activity android:name=".Firstdisplay" > 
+        
+        </activity>
+        
+        <activity android:name=".Registration" android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"> 
+        
+        </activity>
+        <activity android:name=".Sendmsg"  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"> 
+        
+        </activity>
+        <receiver android:name=".C2dmregrecv"
+      android:permission="com.google.android.c2dm.permission.SEND">
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION"> </action>
+        <category android:name="com.visd.Locepeop" />
+      </intent-filter>
+    </receiver>
+    <receiver android:name=".C2dmreceiver"
+	android:permission="com.google.android.c2dm.permission.SEND">
+	<intent-filter>
+		<action android:name="com.google.android.c2dm.intent.RECEIVE"></action>
+		<category android:name="com.visd.Locepeop" />
+	</intent-filter>
+	</receiver>
+	
+	 <service android:name=".C2dmregserv"  >  </service>
+	 <service android:name=".Luser" >  </service>
+	  <service android:name=".Sendc2dmreg"  >  </service>
+	  <service android:name=".Clrusertable"  >  </service>
+	   <service android:name=".Processarr"  >  </service>     
+	  <service android:name=".Logtable"  >  </service>
+	  <service android:name=".Getaddress"   >  </service>
+	   <service android:name=".Serviceforc2dm" >  </service>
+	   <service android:name=".Refregserv" >  </service>
+	     <service android:name=".Checkcatch" >  </service>
+	    <service android:name=".Stopmadluser" >  </service>
+	     <service android:name=".Newservice" >  </service>
+	      <service android:name=".Newicc" >  </service>
+	        <service android:name=".ServiceforArrowhandler" >  </service>  
+
+    </application>
+    
+  
+</manifest>

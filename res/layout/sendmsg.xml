@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:background="@drawable/btn_black">
+    <TextView android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_width="wrap_content" android:layout_below="@+id/sifm" android:layout_centerHorizontal="true" android:id="@+id/status" android:text="." ></TextView>
+    <TextView android:id="@+id/toreg" android:layout_width="wrap_content" android:textStyle="bold" android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:text="TextView" android:layout_alignParentTop="true" android:layout_marginTop="22dp" android:layout_alignLeft="@+id/msgtosnd" android:layout_alignRight="@+id/msgtosnd" android:background="@drawable/btn_black2" android:textColor="@color/blackv"></TextView>
+    <EditText android:inputType="textMultiLine" android:layout_width="wrap_content" android:id="@+id/msgtosnd" android:layout_height="wrap_content" android:gravity="top" android:layout_below="@+id/toreg" android:textSize="18sp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:maxLength="1000" android:layout_above="@+id/sifm" android:background="@drawable/btn_yellow5">
+        <requestFocus></requestFocus>
+    </EditText>
+    <Button android:layout_width="wrap_content" android:text="Send Instant Message" android:typeface="monospace" android:id="@+id/sifm" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_marginBottom="20dp" android:background="@drawable/btn_black3" android:textColor="@color/blackv" android:layout_alignRight="@+id/msgtosnd"></Button>
+    
+</RelativeLayout>
